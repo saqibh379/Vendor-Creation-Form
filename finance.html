@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" link="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Vendor Creation - 1</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Select-Search.css">
+
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md" style="background: var(--bs-link-color);">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="margin-left: 30px;"><img src="assets/img/LogoPNG.png" style="padding: 8px;background: var(--bs-gray-100);border-radius: 3px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse d-flex justify-content-xl-end" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#"></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgba(255,255,255,0.9);font-family: Poppins, sans-serif;font-size: 18px;margin-right: 12px;">SharePoint&nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center" style="padding-top: 12px;margin-top: 30px;">
+        <div>
+            <h2 class="text-center mb-3" style="font-family: Poppins, sans-serif;font-size: 30px;color: #1e70ea;">BP (Vendor) Creation Form</h2>
+        </div>
+    </div>
+    <section>
+        <div class="container shadow-none" style="padding: 30px;border-radius: 3px;margin-top: 24px;background: rgba(145,172,200,0.06);border: 1px solid rgba(145,172,200,0.38);">
+            <div style="width: 100%;">
+                <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex flex-row align-items-start flex-sm-column flex-md-column flex-lg-row" style="width: 400px;min-width: auto;">
+                    <div class="d-flex flex-column align-items-xl-start" style="margin-right: 24px;width: 400px;"><label class="form-label">BP Reference</label><input class="form-control-sm form-control" type="text" disabled="" placeholder="To be alotted after approval" style="width: 400px;"></div>
+                    <div class="d-flex flex-column align-items-start" style="width: 100%;"><label class="form-label">User Email<span style="color: var(--bs-red);">*</span></label><input class="form-control-sm form-control" type="email" style="width: 400px;" disabled=""></div>
+                </div>
+                <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex flex-column align-items-start" style="width: 400px;min-width: auto;margin-top: 16px;"><label class="form-label">Work Flow Selection<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" style="width: 100%;margin-top: 0px;" disabled="">
+                        <option value="12" selected="">Trade-CEO-U</option>
+                        <option value="13">Trade-CEO-K</option>
+                        <option value="14">Non-Trade</option>
+                    </select></div>
+                <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex flex-column align-items-start" style="width: 400px;min-width: auto;margin-top: 16px;"><label class="form-label">Purchasing Group<span style="color: var(--bs-red);">*</span></label><select class="chosen" required="" style="color: #232323;width: 100%;height: 31px;text-align: left;" disabled="">
+                        <option value="12">N01 - Corporate</option>
+                        <option value="13">N02 - Logistics</option>
+                        <option value="13">N03 - Finance</option>
+                        <option value="13">N04 - HR</option>
+                        <option value="13">N05 - Commercial</option>
+                        <option value="14">N06 - Engineering</option>
+                        <option value="15" selected="">N07 - Admin</option>
+                        <option value="16" selected="">N08 - Projects</option>
+                    </select></div>
+                <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex flex-column align-items-start" style="width: 400px;min-width: auto;margin-top: 16px;"><label class="form-label">Vendor Grouping<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" style="width: 100%;margin-top: 0px;" disabled="">
+                        <option value="12" selected="">K005 - Non Trade Creditors - Foreign</option>
+                        <option value="13">K004 - Non Trade Creditors - Local</option>
+                        <option value="14">K002 - Trade Creditors - Foreign</option>
+                        <option value="">K001 - Trade Creditors - Local</option>
+                        <option value="">K003 - One time Vendor - Trade</option>
+                        <option value="">K006 - One time Vendor - Non Trade</option>
+                    </select></div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 36px;">
+        <div class="container" style="padding-right: 0px;padding-left: 0px;">
+            <div class="accordion mb-3" role="tablist" id="accordion-1">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1" style="background: #c3d9f8;color: var(--bs-gray-800);font-size: 20px;font-family: Poppins, sans-serif;height: 44px;">General Information</button></h2>
+                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1" style="height: 100%;">
+                        <div class="accordion-body">
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 24px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Legal Entity Name<span style="color: var(--bs-red);">*</span></label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Registered Address<span style="color: var(--bs-red);">*</span></label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start" id="contact-container"><label class="form-label">Phone Number/Landline</label>
+                                        <div class="d-flex flex-row align-items-xl-center" style="width: 100%;"><input class="form-control-sm form-control" type="number" disabled=""><a href="" data-bs-toggle="" onclick="" cursor="not-allowed" pointer-events="none" readonly="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-left: 3px;font-size: 24px;padding: 0px;color: var(--bs-gray-700);">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7V11H7C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V13H17C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11H13V7Z" fill="currentColor"></path>
+                                                </svg></a></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start" id="email-container"><label class="form-label">Email Address</label>
+                                        <div class="d-flex flex-row align-items-xl-center" style="width: 100%;"><input class="form-control-sm form-control" type="email" style="width: 100%;" disabled=""><a href="" data-bs-toggle="" onclick=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="margin-left: 3px;font-size: 24px;padding: 0px;color: var(--bs-gray-700);">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7V11H7C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V13H17C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11H13V7Z" fill="currentColor"></path>
+                                                </svg></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 24px;">
+                                <div class="col-auto" style="width: 100%;">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Nature of Goods Brief<span style="color: var(--bs-red);">*</span></label><textarea class="form-control-sm form-control" style="border-radius: 3px;" disabled=""></textarea></div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 24px;">
+                                <div class="col-12 d-flex flex-row" style="background: rgba(237,238,239,0.8);border-radius: 3px;padding-left: 12px;padding-top: 7px;padding-bottom: 16px;">
+                                    <div class="d-flex flex-column align-items-xl-start" style="width: 100%;"><label class="form-label">Country<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" id="country" style="border-radius: 3px;width: 100%;" disabled="">
+                                            <option value="usa" selected="">USA</option>
+                                            <option value="pakistan">Pakistan</option>
+                                            <option value="india">India</option>
+                                        </select></div>
+                                    <div class="d-flex flex-column align-items-xl-start" style="width: 100%;margin-left: 12px;"><label class="form-label">Region<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" id="region" style="border-radius: 3px;width: 100%;" disabled="">
+                                            <option value=""></option>
+                                        </select></div>
+                                    <div class="d-flex flex-column align-items-xl-start" style="width: 100%;margin-left: 12px;"><label class="form-label">City<span style="color: var(--bs-red);">*</span></label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;width: 100%;" disabled=""></div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 24px;">
+                                <div class="col-4">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Business Origin<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" style="border-radius: 3px;" disabled="">
+                                            <option value="" selected="">Local</option>
+                                            <option value="13">International</option>
+                                        </select></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Sales Tax Registered<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" id="taxable" style="width: 70px;margin-bottom: 8px;border-radius: 3px;" disabled="">
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select><input class="form-control-sm form-control" type="text" id="taxReference" style="border-radius: 3px;" placeholder="Sales Tax Reference" disabled=""></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Income Tax Registered<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" id="incomeTaxSelect" style="width: 70px;margin-bottom: 8px;border-radius: 3px;" disabled="">
+                                            <option value="yes" selected="">Yes</option>
+                                            <option value="no">No</option>
+                                        </select><input class="form-control-sm form-control" type="text" id="incomeTaxField" style="width: 350px;border-radius: 3px;" placeholder="Income Tax Reference" disabled=""></div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 24px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Old Vendor Name</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Old Vendor Reference</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Comments (if any)</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 24px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start" style="background: rgba(210,228,255,0.31);padding: 12px;">
+                                        <h6>Contact Reference-1</h6>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Name<span style="color: var(--bs-red);">*</span></label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Designation<span style="color: var(--bs-red);">*</span></label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Email<span style="color: var(--bs-red);">*</span></label><input class="form-control-sm form-control" type="email" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Mobile / Direct<span style="color: var(--bs-red);">*</span></label><input class="form-control-sm form-control" type="number" style="border-radius: 3px;" disabled=""></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start" style="background: rgba(210,228,255,0.31);padding: 12px;">
+                                        <h6>Contact Reference-2</h6>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Name</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Designation</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Email</label><input class="form-control-sm form-control" type="email" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Mobile / Direct</label><input class="form-control-sm form-control" type="number" style="border-radius: 3px;" disabled=""></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start" style="background: rgba(255,229,210,0.31);padding: 12px;">
+                                        <h6>Third Party Reference -1</h6>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Reference Name</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Designation</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Company Name</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Contact No.</label><input class="form-control-sm form-control" type="number" style="border-radius: 3px;" disabled=""></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start" style="background: rgba(255,229,210,0.31);padding: 12px;">
+                                        <h6>Third Party Reference -2</h6>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Reference Name</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Designation</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Company Name</label><input class="form-control-sm form-control" type="text" style="border-radius: 3px;" disabled=""></div>
+                                        <div style="width: 100%;margin-top: 6px;"><label class="form-label">Contact No.</label><input class="form-control-sm form-control" type="number" style="border-radius: 3px;" disabled=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 24px;">
+        <div class="container" style="padding-right: 0px;padding-left: 0px;">
+            <div class="accordion mb-3" role="tablist" id="accordion-2">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="false" aria-controls="accordion-2 .item-1" style="background: #c3d9f8;color: var(--bs-gray-800);font-size: 20px;font-family: Poppins, sans-serif;height: 44px;">Payment &amp; Bank Details</button></h2>
+                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-2" style="height: 100%;">
+                        <div class="accordion-body">
+                            <div class="row" style="margin-bottom: 24px;background: #eaf2fe;padding-bottom: 6px;padding-top: 5px;border-radius: 3px;border: 1px none var(--bs-accordion-active-color);">
+                                <div class="col-6">
+                                    <div><label class="form-label">Payment Term<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" disabled="">
+                                            <option value="14">NT00 - Payable immediately Due net</option>
+                                            <option value="12" selected="">NT08 - within 8 days Due net</option>
+                                            <option value="13">NT15 - within 15 days Due net</option>
+                                        </select></div>
+                                </div>
+                                <div class="col-6">
+                                    <div><label class="form-label">Payment Terms (Credit Memo)<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" disabled="">
+                                            <option value="12" selected="">NT00 - Payable immediately Due net</option>
+                                            <option value="13">NT08 - within 8 days Due net</option>
+                                            <option value="14">NT15 - within 15 days Due net</option>
+                                        </select></div>
+                                </div>
+                            </div><div id="paymentContainer">
+    <div id="paymentSection1" class="payment-div">
+        <div class="row" style="margin-bottom: 24px;">
+            <div class="col">
+                <label class="form-label">Mode of Payment<span style="color: var(--bs-red);">*</span></label>
+                <select class="form-select-sm form-control payment-mode" id="paymentMode1" style="border-radius: 2px;" disabled>
+                    <option value="cash" selected>Cash</option>
+                    <option value="cheque">Cheque</option>
+                    <option value="bankTransfer">Online Transfer</option>
+                </select>
+            </div>
+            <div class="col">
+                <label class="form-label">Bank Key<span style="color: var(--bs-red);">*</span></label>
+                <select class="form-select-sm form-control" id="bankKey1" style="border-radius: 2px;">
+                    <option value="AB00" selected>AB00 - ALLIED BANK LTD (IBFT)
+
+                    </option>
+                    <option value="AB01">AB01 - ALLIED BANK
+
+                    </option>
+                    <option value="AB28">AB28 - Allied Bank Limited
+                    </option>
+                </select>
+            </div>
+            <div class="col">
+                <label class="form-label">Bank Name</label>
+                <input id="bankName1" class="form-control-sm form-control" type="text" style="border-radius: 3px;">
+            </div>
+            <div class="col">
+                <label class="form-label">Branch Address<span style="color: var(--bs-red);">*</span></label>
+                <input id="branchAddress1" class="form-control-sm form-control" type="text" style="border-radius: 3px;">
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 24px;">
+            <div class="col">
+                <label class="form-label">A/c Holder Name<span style="color: var(--bs-red);">*</span></label>
+                <input id="accountHolder1" class="form-control-sm form-control" type="text" style="border-radius: 3px;">
+            </div>
+            <div class="col">
+                <label class="form-label">Bank IBAN Reference<span style="color: var(--bs-red);">*</span></label>
+                <input id="bankIBAN1" class="form-control-sm form-control" type="text" style="border-radius: 3px;">
+            </div>
+            <div class="col">
+                <label class="form-label">Bank Country<span style="color: var(--bs-red);">*</span></label>
+                    <select class="form-select-sm form-control" id="bankCountry1" style="border-radius: 2px;">
+                        <option value="AD" selected>AD - Andorra
+    
+                        </option>
+                        <option value="AE">AE - Utd.Arab Emir.
+
+                        </option>
+                        <option value="CN">CN - China
+
+    
+                        </option>
+                    </select>
+            </div>
+            <div class="col">
+                <label class="form-label">Title On Cheque<span style="color: var(--bs-red);">*</span></label>
+                <input id="chequeTitle1" class="form-control-sm form-control" type="text" style="border-radius: 3px;">
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 24px;">
+            
+            <div class="col-3">
+                <label class="form-label">CNIC<span style="color: var(--bs-red);">*</span></label>
+                <input id="cnic1" class="form-control-sm form-control" type="text" style="border-radius: 3px;" readonly>
+            </div>
+            <!-- <div class="col-3">
+                <label class="form-label">Payment Term</label>
+                <select class="form-select-sm form-control" id="paymentTerms1" style="border-radius: 2px;">
+                    <option value="NT00" selected>NT00 - Payable immediately Due net
+
+                    </option>
+                    <option value="NT08">NT08 - within 8 days Due net
+                    </option>
+                    <option value="NT15">NT15 - within 15 days Due net
+
+                    </option>
+                </select>
+            </div>
+            <div class="col-3">
+                <label class="form-label">Payment Terms (Credit Memo)</label>
+                <select class="form-select-sm form-control" id="paymentTermCreditMemo1" style="border-radius: 2px;">
+                    <option value="NT00" selected>NT00 - Payable immediately Due net
+
+                    </option>
+                    <option value="NT08">NT08 - within 8 days Due net
+                    </option>
+                    <option value="NT15">NT15 - within 15 days Due net
+
+                    </option>
+                </select>
+            </div> -->
+        </div>
+        
+        <!-- Remove button hidden for the first section -->
+        <div class="d-flex justify-content-end remove-btn-container" style="display: none;">
+            <button class="btn btn-danger btn-secondary remove-payment disabled" type="button" style="margin-left: 10px;">Remove</button>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-end" style="margin-top: 10px;">
+    <button id="addPaymentBtn" class="btn btn-primary">Add Payment</button>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 24px;">
+        <div class="container" style="padding-right: 0px;padding-left: 0px;">
+            <div class="accordion mb-3" role="tablist" id="accordion-3">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-1" aria-expanded="false" aria-controls="accordion-3 .item-1" style="background: #c3d9f8;color: var(--bs-gray-800);font-size: 20px;font-family: Poppins, sans-serif;height: 44px;">Other Information - Garments Specific</button></h2>
+                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-3" style="height: 100%;">
+                        <div class="accordion-body">
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 24px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Garments Vendor<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" id="Garment-Mode" style="border-radius: 2px;" disabled="">
+                                            <option value="yes-garment" selected="">Yes</option>
+                                            <option value="no-garment">No</option>
+                                        </select></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Gender<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" id="gender" style="border-radius: 2px;" disabled="" readonly="">
+                                            <option value="12" selected="">Man</option>
+                                            <option value="13">Women</option>
+                                            <option value="14">Boy</option>
+                                            <option value="">Girl</option>
+                                            <option value="">N/B</option>
+                                        </select></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Fabric Manufacturer<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" id="fabric" style="border-radius: 2px;" disabled="">
+                                            <option value="12" selected="">Yes</option>
+                                            <option value="13">No</option>
+                                        </select></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">CMT<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" id="cmt" style="border-radius: 2px;" disabled="">
+                                            <option value="12" selected="">Yes</option>
+                                            <option value="13">No</option>
+                                        </select></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5>Subcategory- L2<span style="color: var(--bs-red);">*</span></h5><select id="item-list" class="selectpicker" multiple="" data-live-search="true" data-actions-box="true" data-width="100%" disabled="">
+                                        <option value="Item 1">Item 1</option>
+                                        <option value="Item 2">Item 2</option>
+                                        <option value="Item 3">Item 3</option>
+                                        <option value="Item 4">Item 4</option>
+                                        <option value="Item 5">Item 5</option>
+                                    </select><textarea id="selected-items" class="form-control mt-3" rows="5" placeholder="Selected items will appear here..."></textarea>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Related Items - L4</h5><select id="related-dropdown" class="selectpicker" multiple="" data-live-search="true" data-actions-box="true" data-width="100%" disabled=""></select><textarea id="related-items" class="form-control mt-3" rows="5" placeholder="Selected related items will appear here..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 24px;margin-bottom: 24px;">
+        <div class="container" style="padding-right: 0px;padding-left: 0px;">
+            <div class="accordion mb-3" role="tablist" id="accordion-4">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-1" aria-expanded="false" aria-controls="accordion-4 .item-1" style="background: #c3d9f8;color: var(--bs-gray-800);font-size: 20px;font-family: Poppins, sans-serif;height: 44px;">Corporate Profile &amp; Attachment List</button></h2>
+                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-4" style="height: 100%;">
+                        <div class="accordion-body">
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Legal Status<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control" disabled="">
+                                            <option value="12" selected="">Individual</option>
+                                            <option value="13">Firm</option>
+                                            <option value="14">Association of person</option>
+                                            <option value="">SMC</option>
+                                            <option value="">Private Limited</option>
+                                            <option value="">Public Listed Company</option>
+                                        </select></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Company Profile</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Visiting Card</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">NTN Certificate</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">STRN Certificate</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Company Sales Tax Status</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Company Income Tax Status</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">CNIC</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">CMI Agreement</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Account Maintenance Certificate</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Bank Statement</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Other Agreement (If any)</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Income Tax Returns - Year 1</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Income Tax Returns - Year 2</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Income Tax Returns - Year 3<span style="color: var(--bs-red);">*</span></label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Sales Tax Returns - Year 1</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Sales Tax Returns - Year 2</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Sales Tax Returns - Year 3</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Financial Statements - Year 1</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Financial Statements - Year 2</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                <div class="col">
+                                    <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Financial Statements - Year 3</label><input class="form-control-sm form-control" type="file" disabled=""></div>
+                                </div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                            </div>
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col">
+                                    <div class="d-xl-flex justify-content-xl-end"><button class="btn btn-primary disabled" type="button" style="border-radius: 2px;width: 200.0469px;" disabled="">Submit</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 0px;margin-bottom: 60px;">
+        <div class="container" style="padding-right: 0px;padding-left: 0px;">
+            <div class="accordion mb-3" role="tablist" id="accordion-5">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-1" aria-expanded="false" aria-controls="accordion-5 .item-1" style="background: #c3d9f8;color: var(--bs-gray-800);font-size: 20px;font-family: Poppins, sans-serif;height: 44px;">System Information</button></h2>
+                    <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-5" style="height: 100%;">
+                        <div class="accordion-body">
+                            <div style="padding: 6px;background: #f3f9ff;margin-bottom: 12px;padding-top: 12px;">
+                                <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Essential / Non-Essential<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control">
+                                                <option value="12" selected="">Individual</option>
+                                                <option value="13">Firm</option>
+                                                <option value="14">Association of person</option>
+                                                <option value="">SMC</option>
+                                                <option value="">Private Limited</option>
+                                                <option value="">Public Listed Company</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">GR Based Inv. Verification</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Yes</label></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Srv.-Based Inv. Ver.</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Yes</label></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Reconciliation acct<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control">
+                                                <option value="12" selected="">Individual</option>
+                                                <option value="13">Firm</option>
+                                                <option value="14">Association of person</option>
+                                                <option value="">SMC</option>
+                                                <option value="">Private Limited</option>
+                                                <option value="">Public Listed Company</option>
+                                            </select></div>
+                                    </div>
+                                </div>
+                                <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Prepayment Relevance<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control">
+                                                <option value="12" selected="">Individual</option>
+                                                <option value="13">Firm</option>
+                                                <option value="14">Association of person</option>
+                                                <option value="">SMC</option>
+                                                <option value="">Private Limited</option>
+                                                <option value="">Public Listed Company</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Purchase Org. <span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control">
+                                                <option value="12" selected="">Individual</option>
+                                                <option value="13">Firm</option>
+                                                <option value="14">Association of person</option>
+                                                <option value="">SMC</option>
+                                                <option value="">Private Limited</option>
+                                                <option value="">Public Listed Company</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Schema Group<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control">
+                                                <option value="12" selected="">Individual</option>
+                                                <option value="13">Firm</option>
+                                                <option value="14">Association of person</option>
+                                                <option value="">SMC</option>
+                                                <option value="">Private Limited</option>
+                                                <option value="">Public Listed Company</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Order Currency<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control">
+                                                <option value="12" selected="">Individual</option>
+                                                <option value="13">Firm</option>
+                                                <option value="14">Association of person</option>
+                                                <option value="">SMC</option>
+                                                <option value="">Private Limited</option>
+                                                <option value="">Public Listed Company</option>
+                                            </select></div>
+                                    </div>
+                                </div>
+                                <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;">
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">House Bank<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control">
+                                                <option value="12" selected="">Individual</option>
+                                                <option value="13">Firm</option>
+                                                <option value="14">Association of person</option>
+                                                <option value="">SMC</option>
+                                                <option value="">Private Limited</option>
+                                                <option value="">Public Listed Company</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Incoterms<span style="color: var(--bs-red);">*</span></label><select class="form-select-sm form-control">
+                                                <option value="12" selected="">Individual</option>
+                                                <option value="13">Firm</option>
+                                                <option value="14">Association of person</option>
+                                                <option value="">SMC</option>
+                                                <option value="">Private Limited</option>
+                                                <option value="">Public Listed Company</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex flex-column align-items-xl-start"><label class="form-label">Incoterms Location 1<span style="color: var(--bs-red);">*</span></label></div><input class="form-control-sm form-control" type="text">
+                                    </div>
+                                    <div class="col"></div>
+                                </div>
+                            </div><div id="form-container">
+    <div class="section">
+      <div class="row align-items-center mb-3">
+        <div class="col">
+          <label class="form-label">WTax Type<span style="color: var(--bs-red);">*</span></label>
+          <select class="form-select-sm form-control">
+            <option value="12" selected="">Individual</option>
+            <option value="13">Firm</option>
+            <option value="14">Association of person</option>
+            <option value="">SMC</option>
+            <option value="">Private Limited</option>
+            <option value="">Public Listed Company</option>
+          </select>
+        </div>
+        <div class="col">
+          <label class="form-label">WTax Code<span style="color: var(--bs-red);">*</span></label>
+          <select class="form-select-sm form-control">
+            <option value="12" selected="">Individual</option>
+            <option value="13">Firm</option>
+            <option value="14">Association of person</option>
+            <option value="">SMC</option>
+            <option value="">Private Limited</option>
+            <option value="">Public Listed Company</option>
+          </select>
+        </div>
+        <div class="col">
+          <label class="form-label">W/tax ID<span style="color: var(--bs-red);">*</span></label>
+          <input class="form-control-sm form-control" type="text" />
+        </div>
+        <div class="col">
+          <label class="form-label">Exemption Applicable<span style="color: var(--bs-red);">*</span></label>
+          <input class="form-control-sm form-control" type="text" />
+        </div>
+      </div>
+      <div class="row align-items-center mb-3">
+        <div class="col-3">
+          <label class="form-label">Exemption Reference<span style="color: var(--bs-red);">*</span></label>
+          <input class="form-control-sm form-control" type="text" />
+        </div>
+        <div class="col-3">
+          <label class="form-label">Exemption From<span style="color: var(--bs-red);">*</span></label>
+          <input
+            class="form-control-sm form-control date-input"
+            type="text"
+            placeholder="YYYYMMDD"
+            maxlength="8"
+          />
+          <span class="feedback-msg" style="color: red;font-size: 0.7em;margin-top: 5px;"></span>
+        </div>
+        <div class="col-3">
+          <label class="form-label">Exemption To<span style="color: var(--bs-red);">*</span></label>
+          <input
+            class="form-control-sm form-control date-input"
+            type="text"
+            placeholder="YYYYMMDD"
+            maxlength="8"
+          />
+          <span class="feedback-msg" style="color: red;font-size: 0.7em;margin-top: 5px;"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-start">
+            <button class="btn btn-primary btn-sm me-2 add-btn" type="button">
+              Add
+            </button>
+            <button class="btn btn-danger btn-sm remove-btn" type="button">
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+                            <div class="row d-flex flex-sm-column flex-lg-row" style="margin-bottom: 40px;margin-top: 12px;">
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col"></div>
+                                <div class="col">
+                                    <div class="d-xl-flex justify-content-xl-end"><button class="btn btn-primary" type="button" style="border-radius: 2px;width: 200.0469px;">Submit</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/finance/add-section.js"></script>
+    <script src="assets/js/Garment-Specific/garment-vendor.js"></script>
+    <script src="assets/js/Garment-Specific/level2-Level4-items.js"></script>
+    <script src="assets/js/General-Information/addemail.js"></script>
+    <script src="assets/js/General-Information/addphonenumber.js"></script>
+    <script src="assets/js/General-Information/incomeTax.js"></script>
+    <script src="assets/js/General-Information/region.js"></script>
+    <script src="assets/js/General-Information/sales-tx-registered.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+    <script src="assets/js/Payment-detail/cnicFormatter.js"></script>
+    <script src="assets/js/Payment-detail/Dynamic-Addition-and-Removal.js"></script>
+    <script src="assets/js/Payment-detail/paymentMode.js"></script>
+    <script src="assets/js/Select-Search-Search-Select-V1.js"></script>
+
+
+     <!-- Bootstrap 4 JS -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+</body>
+
+</html>
